@@ -1,6 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
 import Fifth from "../views/Fifth.vue";
 import Sixth from "../views/Sixth.vue";
 
@@ -8,15 +7,10 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-
-  {
     path: "/fifth",
     name: "Fifth",
     component: Fifth,
+    alias: "/",
   },
   {
     path: "/sixth",
