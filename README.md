@@ -1,5 +1,8 @@
 # card-flip
 
+## Demo
+https://johnkougioum.github.io/card-flip/
+
 ## Project setup
 ```
 npm install
