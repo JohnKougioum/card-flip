@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-link class="pr-2 text-lg" to="/fifth">fifth</router-link>
+    <router-link class="text-lg" to="/sixth">sixth</router-link>
+
+    <router-view />
   </div>
 </template>
 

@@ -1,28 +1,34 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import SecondTry from '../views/SecondTry.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Fifth from "../views/Fifth.vue";
+import Sixth from "../views/Sixth.vue";
 
-
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
+  },
+
+  {
+    path: "/fifth",
+    name: "Fifth",
+    component: Fifth,
   },
   {
-    path: '/sec',
-    name: 'SecondTry',
-    component: SecondTry
+    path: "/sixth",
+    name: "Sixth",
+    component: Sixth,
   },
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
